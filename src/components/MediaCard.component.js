@@ -13,7 +13,7 @@ const useStyles = makeStyles({
   card: {
     width: 330,
     margin: 2,
-    
+
   },
   media: {
     height: 180,
@@ -29,14 +29,14 @@ export default (props) => {
           image={props.imageSrc}
           title={props.titleSrc}
         />
-        <CardContent>
-
+        <CardContent > 
+        
           <Typography gutterBottom variant="h5" component="h2" >
-          {props.titleSrc}
+            {props.id}
           </Typography>
 
           <Typography variant="body2" color="textSecondary" component="p">
-          {props.descriptionSrc}
+            {props.descriptionSrc}
           </Typography>
 
         </CardContent>
@@ -45,7 +45,8 @@ export default (props) => {
         <Button size="small" color="primary">
           Share
         </Button>
-        <Button size="small" color="primary">
+        <Button size="small" color="primary"
+          onClick>
           Learn More
         </Button>
       </CardActions>
