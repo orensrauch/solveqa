@@ -1,8 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./pages/home/Home";
-import Help from "./pages/Help";
-import About from "./pages/About";
+import Help from "./pages/Help/Help";
+import About from "./pages/About/About";
+import ReturnOfTheTester from "./challenges/return_of_the_tester/returnOfTheTester";
+import NewHope from "./challenges/NewHope/NewHope";
+
 
 function MyRouter() {
   return (
@@ -21,6 +24,7 @@ function MyRouter() {
           </li>
         </ul>
         <hr />
+        
         <Switch>
 
           <Route exact path="/">
@@ -35,6 +39,14 @@ function MyRouter() {
             <Help />
           </Route>
 
+          <Route path="/returnofthetester">
+            <ReturnOfTheTester />
+          </Route>
+
+          <Route path="/NewHope">
+            <NewHope />
+          </Route>
+         
         </Switch>
       </div>
     </Router>

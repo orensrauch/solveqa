@@ -1,0 +1,28 @@
+.chal-header {
+  font-size: 40px;
+  line-height: 1.1;
+  font-family: "Google Sans Regular";
+  text-align: center;
+}
+
+.chal-body-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1380px) {
+  .chal-header {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chal-body-div {
+    flex-direction: column;
+  }
+
+  .chal-header {
+    font-size: 30px;
+  }
+}
