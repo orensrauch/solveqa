@@ -2,7 +2,7 @@
 const seo = {
     title: "Solve QA Challenges",
     description:
-        "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+        "A passionate individual who thrives to success in the automation testing field can find multi challenges to complete in order to gain or brush testing skills",
     og: {
         title: "Solve QA Challenges",
         type: "website",
@@ -10,16 +10,7 @@ const seo = {
     },
 };
 //Home Page
-const greeting = {
-    title: "Oren Schuller Rauch",
-    logo_name: "oren s.rauch",
-    nickname: "layman_brother",
-    subTitle:
-        "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
-    resumeLink:
-        "https://drive.google.com/open?id=1XYpYhLeqCdyx_q6l0bQoC7RgwQjAjXPf",
-    portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
-};
+
 
 //Home Challenges by order
 const challenges = {
@@ -140,6 +131,5 @@ const challenges = {
 export {
 
     seo,
-    greeting,
     challenges,
 };

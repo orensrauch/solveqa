@@ -9,8 +9,22 @@ import "./home.css"
 
 class Home extends React.Component {
 
-  render() {
+  constructor() {
+    super();
 
+    this.state = {
+      // challenges: [],
+      searchField: ''
+
+    }
+  }
+  handleChange = (e) => {
+    this.setState({ searchField: e.target.value })
+  }
+
+  render() {
+    const { searchField } = this.state
+    
     return (
       <div className="home-main">
 
@@ -27,8 +41,9 @@ class Home extends React.Component {
 
           </div>
         </Fade>
+        
         <div alt="all challenges cards">
-          <Challenges />
+          <Challenges query={searchField}/>
         </div>
 
 
