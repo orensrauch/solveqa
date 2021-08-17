@@ -2,12 +2,18 @@ import React, { Component } from "react";
 import "./Challenges.css";
 import { Fade } from "react-reveal";
 import { challenges } from "../../allData";
-//import { SearchBox } from "../../components/search_box/search-box.component";
 import ChallengeCard from "../../components/challenge_card/ChallengeCard"
 
+
+/**
+ * This method used to present 
+ * all the challenges cards at the home page
+ * 
+ * method includes filter search function over each
+ * challenge from allData file to enable search field by name
+ */
 class Challenges extends Component {
     render() {
-        //  const challenge = this.props.challenge;
         const queryFilter = this.props.query 
         return (
             <div className="main" id="challenges">

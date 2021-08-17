@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect, useRef, useState } from 'react';
+import "./toDo.css";
 
 function TODO() {
 
@@ -24,12 +25,12 @@ function TODO() {
     }
 
     return (
-        <div>
+        <div className="form-container">
 
 
-            <form onSubmit={addTodo}>
-                <input ref={todoText} />
-                <input type="submit" value="Add Todo" />
+            <form className="form-line" onSubmit={addTodo}>
+                <input ref={todoText} className="input-field"/>
+                <input type="submit" value="Add Todo" className="input-field-btn"/>
             </form>
             <div>
                 <ul>

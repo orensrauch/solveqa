@@ -3,7 +3,8 @@ import React from "react";
 import { SearchBox } from "../../components/search_box/search-box.component";
 import Challenges from "../../containers/challenges/Challenges";
 import { Fade } from "react-reveal";
-import "./home.css"
+//import "../../App.css";
+import "./home.css";
 
 
 
