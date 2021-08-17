@@ -122,6 +122,13 @@ const challenges = {
             subtitle: "This is Challenge QA ",
             challenge_link: "/newhope",
         },
+        {
+            imageSrc: "https://picsum.photos/id/866/700/400",
+            title: "SEGEV",
+            id: "16",
+            subtitle: "This is Challenge QA ",
+            challenge_link: "/segev",
+        },
     ]
 }
 

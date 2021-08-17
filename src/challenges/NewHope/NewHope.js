@@ -6,6 +6,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
+import "./NewHope.css";
 
 const images = [
     {
@@ -34,6 +35,7 @@ const useStyles = makeStyles((theme) => ({
         flexWrap: 'wrap',
         minWidth: 800,
         width: '100%',
+
     },
     image: {
         position: 'relative',
@@ -105,7 +107,7 @@ export default function NewHope() {
     const classes = useStyles();
 
     return (
-        <div className={classes.root} name={images.alt}>
+        <div className={classes.root} name={images.alt} className="main">
             {images.map((image) => (
                 <ButtonBase
                     focusRipple
