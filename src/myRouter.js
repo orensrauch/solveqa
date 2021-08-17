@@ -5,6 +5,7 @@ import Help from "./pages/Help/Help";
 import About from "./pages/About/About";
 import ReturnOfTheTester from "./challenges/return_of_the_tester/returnOfTheTester";
 import NewHope from "./challenges/NewHope/NewHope";
+import TODO from "./challenges/toDo/toDo"
 
 
 function MyRouter() {
@@ -46,6 +47,12 @@ function MyRouter() {
           <Route path="/NewHope">
             <NewHope />
           </Route>
+
+          <Route path="/TODO">
+            <TODO />
+          </Route>
+
+       
          
         </Switch>
       </div>

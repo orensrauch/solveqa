@@ -39,7 +39,11 @@ class ChallengeCard extends Component {
           <div className="chal-body">
             <h2 className="chal-body-title">
               {challenge.title}
+              
             </h2>
+            <p className="chal-id">
+              {challenge.id}
+            </p>
             <h3
               className="chal-body-subtitle"
 

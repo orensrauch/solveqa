@@ -1,12 +1,12 @@
 .chal-card {
-  width: 30%;
+  width: 50%;
   display: inline-block;
   justify-content: center;
   align-items: center;
   text-align: center;
   border: 1px solid #d9dbdf;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px #d9dbdf;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px #d9dbdf;
   margin-bottom: 30px;
   flex: 0 0 30%;
 }
@@ -16,10 +16,14 @@
   border-radius: 5px 5px 0px 0px;
 }
 
+.chal-id{
+  font-size: 18px;
+}
+
 .logo_img {
   margin: 3px;
   width: auto;
-  height: 100px;
+  height: 150px;
 }
 
 .chal-body {
@@ -98,7 +102,7 @@
 }
 
 .fadeIn-top {
-  top: 20%;
+  top: 15%;
 }
 
 @media (max-width: 1380px) {
