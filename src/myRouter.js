@@ -6,13 +6,12 @@ import About from "./pages/About/About";
 import ReturnOfTheTester from "./challenges/return_of_the_tester/returnOfTheTester";
 import NewHope from "./challenges/NewHope/NewHope";
 import TODO from "./challenges/toDo/toDo";
-import Navbar from "./components/navbar/navbar.component";
 
 
 function MyRouter() {
   return (
     <Router>
-    <Navbar/>
+
       <div className="App-header">
         {/* <h1>SOLVEQA.COM</h1>
         <ul className="nav-app">
@@ -27,7 +26,7 @@ function MyRouter() {
           </li>
         </ul>
         <hr /> */}
-        
+
         <Switch>
 
           <Route exact path="/">
@@ -54,10 +53,11 @@ function MyRouter() {
             <TODO />
           </Route>
 
-       
-         
+
+
         </Switch>
       </div>
+
     </Router>
   );
 }

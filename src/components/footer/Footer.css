@@ -1,8 +1,17 @@
-.footer-main{
-    font-size: 1.5rem;
-    color: var(--clr-primary-5);
-    background: transparent;
-    border-color: transparent;
-    transition: var(--transition);
-    cursor: pointer;
+.footer {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.f-body {
+  align-items: center;
+  justify-content: space-between;
+  color: aquamarine;
+}
+
+.sec {
+  color: black;
 }

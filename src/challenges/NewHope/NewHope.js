@@ -107,38 +107,41 @@ export default function NewHope() {
     const classes = useStyles();
 
     return (
-        <div className={classes.root} name={images.alt} className="main">
-            {images.map((image) => (
-                <ButtonBase
-                    focusRipple
-                    name={image.alt}
-                    key={image.title}
-                    className={classes.image}
-                    focusVisibleClassName={classes.focusVisible}
-                    style={{
-                        width: image.width,
-                    }}
-                >
-                    <span
-                        className={classes.imageSrc}
+        <div className="main">
+            <div className={classes.root} name={images.alt} >
+                {images.map((image) => (
+                    <ButtonBase
+                        focusRipple
+                        name={image.alt}
+                        key={image.title}
+                        className={classes.image}
+                        focusVisibleClassName={classes.focusVisible}
                         style={{
-                            backgroundImage: `url(${image.url})`,
+                            width: image.width,
                         }}
-                    />
-                    <span className={classes.imageBackdrop} />
-                    <span className={classes.imageButton}>
-                        <Typography
-                            component="span"
-                            variant="subtitle1"
-                            color="inherit"
-                            className={classes.imageTitle}
-                        >
-                            {image.title}
-                            <span className={classes.imageMarked} />
-                        </Typography>
-                    </span>
-                </ButtonBase>
-            ))}
+                    >
+                        <span
+                            className={classes.imageSrc}
+                            style={{
+                                backgroundImage: `url(${image.url})`,
+                            }}
+                        />
+                        <span className={classes.imageBackdrop} />
+                        <span className={classes.imageButton}>
+                            <Typography
+                                component="span"
+                                variant="subtitle1"
+                                color="inherit"
+                                className={classes.imageTitle}
+                            >
+                                {image.title}
+                                <span className={classes.imageMarked} />
+                            </Typography>
+                        </span>
+                    </ButtonBase>
+                ))}
+            </div>
         </div>
+
     );
 }

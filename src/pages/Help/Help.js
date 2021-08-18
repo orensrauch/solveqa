@@ -4,7 +4,11 @@ import React from "react";
 
 function Help() {
   return (
-    <h1>Help</h1>
+    <div>
+       <h1>Help Page</h1>
+       
+    </div>
+   
   );
 }
 
