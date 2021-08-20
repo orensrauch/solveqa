@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import {  Link } from "react-router-dom";
 import { FaBars } from 'react-icons/fa';
 import { links, social } from '../../allData';
 import logo from './logo.svg';
@@ -34,7 +35,7 @@ const Navbar = () => {
               const { id, url, text } = link;
               return (
                 <li key={id}>
-                  <a href={url}>{text}</a>
+                  <Link to={url}>{text}</Link>
                 </li>
               );
             })}
