@@ -1,7 +1,7 @@
 //                DEPENDENCIES
 //----------------------------------------//
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 
 //                PAGES
@@ -14,6 +14,7 @@ import ReturnOfTheTester from "./challenges/return_of_the_tester/returnOfTheTest
 import NewHope from "./challenges/NewHope/NewHope";
 import TODO from "./challenges/toDo/toDo";
 import Documentation from './pages/documentation/Documentation';
+import HomeAuto from './pages/home-automation/homeAuto';
 
 //                components
 //----------------------------------------//
@@ -72,10 +73,14 @@ function App() {
             <Documentation />
           </Route>
 
-          <div className="app-footer">
-            <FOOTER />
-          </div>
+          <Route path="/homeautomation">
+            <HomeAuto />
+          </Route>
+
+          <FOOTER />
         </div>
+
+
 
 
       </Switch>

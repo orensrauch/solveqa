@@ -1,7 +1,12 @@
-.home-main {
-
+.header-banner{
+  
+    margin-bottom: 5px;
 }
 
-.searchbox{
-    box-shadow: 20px;
+.home-btns {
+position:relative;
+justify-content: space-between;
+height:100px;
+margin-left: 50%;
 }
+
